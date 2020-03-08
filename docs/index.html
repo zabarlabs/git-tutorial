@@ -166,8 +166,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introducci&#xF3;n">Introducci&#xF3;n</h1>
-<p>Este ser&#xE1; un breve tutorial acerca de una herramienta muy importante a la hora de realizar cualquier tipo de desarrollo.</p>
+                                <h1 id="&#xBF;qu&#xE9;-es-git">&#xBF;Qu&#xE9; es Git?</h1>
+<p>Git es lo que se conoce como un control de versiones y actua como un backup de los cambios que vayamos haciendo en nuestro proyecto (ya sea de desarrollo o escribir un libro por ejemplo).<br>Lo realmente potente de esta herramienta es que nos permite volver a un estado anterior de nuestro proyecto con relativa facilidad, adem&#xE1;s todos los cambios que vayamos generando estar&#xE1;n documentados lo que nos permite en todo momento saber lo que estamos haciendo.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>El creador de Git es el mismo que el de Linux, Linus Torvals</p>
+</div></div></p>
+<p>Desde la pagina de <strong><a href="https://git-scm.com/" target="_blank">Git</a></strong> podemos descargar el instalador para Windows, que incluye una terminal de comandos llamada <strong>Git Bash</strong>.</p>
+<h2 id="&#x1F5C3;-&#xBF;qu&#xE9;-es-un-repositorio">&#x1F5C3; &#xBF;Qu&#xE9; es un repositorio?</h2>
+<p>Un repositorio es una carpeta donde tendremos alojado nuestro proyecto. Para que este sea un repositorio Git tendr&#xE1; que contener una carpeta oculta llamada <strong><code>.git</code></strong>. Los cambios que vayamos haciendo se ir&#xE1;n guardando en esta carpeta.<br>Para inicializar un repositorio se utiliza el comando:<br><strong><code>$ git init</code></strong><br>A partir de ese momento los archivos que se incluyan en el repositorio ser&#xE1;n continuamente rastreados por Git y cual cambio o modificaci&#xF3;n quedar&#xE1; registrado.</p>
+<h2 id="&#x1F48E;-configuraci&#xF3;n-inicial">&#x1F48E; Configuraci&#xF3;n inicial</h2>
+<p>Git permite obtener y establecer una serie de variables de configuraci&#xF3;n que controlan el aspecto y el funcionamiento de Git. Esto lo podemos controlar mediante el comando <strong><code>git config</code></strong>.</p>
+<p>Vamos a ver que configuraciones podemos hacer:</p>
+<ul>
+<li><strong><code>$ git config --global user.name &quot;Mi Nombre&quot;</code></strong>: establece el nombre de usuario.</li>
+<li><strong><code>$ git config --global user.email miNombre@ejemplo.com</code></strong>: establece el email.</li>
+<li><strong><code>$ git config --global core.editor Code</code></strong>: establece VS Code como editor por defecto.</li>
+<li><strong><code>$ git config --list</code></strong>: lista las propiedades que Git ha configurado.</li>
+</ul>
+<h2 id="&#x1F4D6;-&#xBF;c&#xF3;mo-se-obtiene-ayuda">&#x1F4D6; &#xBF;C&#xF3;mo se obtiene ayuda?</h2>
+<p>Saberse todos los comandos que tiene Git adem&#xE1;s de ser muy complicado, no es muy pr&#xE1;ctico. Git nos provee de un manual donde nos explica que es lo que hace cada comando, tenemos varias formas de acceder al mismo:</p>
+<pre><code class="lang-java">$ git help &lt;comando&gt;
+$ git &lt;comando&gt; --help
+</code></pre>
 
                                 
                                 </section>
@@ -207,7 +226,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduccion","level":"1.1","depth":1,"next":{"title":"Capitulo1","level":"1.2","depth":1,"path":"Capitulo1.md","ref":"Capitulo1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-03-08T18:57:40.330Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-08T19:18:58.247Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduccion","level":"1.1","depth":1,"next":{"title":"Capitulo1","level":"1.2","depth":1,"path":"Capitulo1.md","ref":"Capitulo1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-03-08T23:27:11.281Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-08T23:29:09.533Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
