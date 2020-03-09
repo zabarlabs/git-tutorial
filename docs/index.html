@@ -187,6 +187,20 @@
 <pre><code class="lang-java">$ git help &lt;comando&gt;
 $ git &lt;comando&gt; --help
 </code></pre>
+<h2 id="&#x1F50D;-archivo-gitignore">&#x1F50D; Archivo .gitignore</h2>
+<p>En ocasiones querremos que alg&#xFA;n archivo o carpeta no sean trackeados por Git, debido a que no son importantes (por ejemplo archivos temporales) o simmplemente no son necesarios para nuestro desarrollo. Mediante este archivo <strong><code>.gitignore</code></strong> Git nos ayuda a que no sean rastreados.<br>El contenido del mismo ser&#xE1;n extensiones de archivos o patrones creados para el objetivo. Veamos algunos ejemplos:</p>
+<pre><code class="lang-java">*.dat # ignora todos los archivos .dat
+temp/ # ignora el contenido de la carpeta temp
+</code></pre>
+<pre><code class="lang-java">*.dat # ignora todos los archivos .data
+!final.dat # excepto el archivo final.dat
+</code></pre>
+<ul>
+<li><strong><code>$ git status --ignored</code></strong>: permite conocer que archivos tenemos ignorados.</li>
+<li><strong><code>$ git add -f archivos.dat</code></strong>: forzamos a que Git agregue ese archivo al rastreo.</li>
+</ul>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Es conveniente que el archivo <code>.gitignore</code> se cree al comienzo y no m&#xE1;s adelante, ya que Git puede seguir rastreando los archivos que en un primer momento no se han incluido en &#xE9;l.</p>
+</div></div></p>
 
                                 
                                 </section>
@@ -226,7 +240,7 @@ $ git &lt;comando&gt; --help
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduccion","level":"1.1","depth":1,"next":{"title":"Capitulo1","level":"1.2","depth":1,"path":"Capitulo1.md","ref":"Capitulo1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-03-08T23:27:11.281Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-08T23:29:09.533Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduccion","level":"1.1","depth":1,"next":{"title":"Capitulo1","level":"1.2","depth":1,"path":"Capitulo1.md","ref":"Capitulo1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-03-09T08:28:38.417Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-09T08:29:25.447Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

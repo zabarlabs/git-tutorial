@@ -35,3 +35,25 @@ Saberse todos los comandos que tiene Git además de ser muy complicado, no es mu
 $ git help <comando>
 $ git <comando> --help
 ```
+
+## 🔍 Archivo .gitignore
+
+En ocasiones querremos que algún archivo o carpeta no sean trackeados por Git, debido a que no son importantes (por ejemplo archivos temporales) o simmplemente no son necesarios para nuestro desarrollo. Mediante este archivo **`.gitignore`** Git nos ayuda a que no sean rastreados.  
+El contenido del mismo serán extensiones de archivos o patrones creados para el objetivo. Veamos algunos ejemplos:
+
+```java
+*.dat # ignora todos los archivos .dat
+temp/ # ignora el contenido de la carpeta temp
+```
+
+```java
+*.dat # ignora todos los archivos .data
+!final.dat # excepto el archivo final.dat
+```
+
+- **`$ git status --ignored`**: permite conocer que archivos tenemos ignorados.
+- **`$ git add -f archivos.dat`**: forzamos a que Git agregue ese archivo al rastreo.
+
+{% hint style='tip' %}
+Es conveniente que el archivo `.gitignore` se cree al comienzo y no más adelante, ya que Git puede seguir rastreando los archivos que en un primer momento no se han incluido en él.
+{% endhint %}
