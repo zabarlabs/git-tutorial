@@ -43,4 +43,19 @@ Dentro de este ciclo de vida podemos encontrarnos con tres estados en los que se
 - **`$ git status -s`**: muestra el estado pero de una manera más reducida.
 - **`$ git add <archivo1><archivo2><...>`**: comando que se utiliza para empezar a rastrear nuevos archivos.
 - **`$ git add .`**: utilizando el punto añade todos los archivos a la vez.
-- **`$ git commit -m"Mensaje del commit"`**: manda al repositorio los archivos preparadados en el Staged Area.
+- **`$ git diff`**: compara lo que tienes en el directorio de trabajo con lo que está en el área de preparación.
+- **`$ git adiff --staged`**: compara los cambios preparados con la última instantanea confirmada.
+- **`$ git commit -m"Mensaje del commit"`**: comando que confirma los cambios y manda los archivos a la zona del Repositorio.
+- **`$ git commit -a -m"Mensaje del commit`**: con esta combinación de comandos nos saltamos el area intermedia de preparación.
+
+### ✂ ¿Cómo eliminar un archivo?
+
+- **`$ git rm <archivo>`**: elimina el archivo del directorio de trabajo, de manera que la próxima vez aparezca como un archivo no rastreado.
+- **`$ git rm -f <archivo>`**: si el archivo ya había sido añadido al índice hay que forzar su eliminación.
+- **`$ git rm --cached <archivo>`**: mantiene el archivo en el directorio de trabajo pero Git no lo rastreará.
+- **`$ git rm log/\*.log`**: elimina todos los archivos con extensión `.log` dentro de la carpeta `log/`.
+- **`$ git rm \*~`**: elimina todos los archivos que acaben con`~`.
+
+### ✏️ ¿Cómo cambiar el nombre a un archivo?
+
+- **`$ git mv <nombre> <nuevoNombre>`**: permite renombrar un archivo.
