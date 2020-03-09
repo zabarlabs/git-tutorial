@@ -37,7 +37,7 @@ Dentro de este ciclo de vida podemos encontrarnos con tres estados en los que se
 - **Staged Area**: es la zona intermedia, un area de preparación donde están los archivos que han sido editados.
 - **Repositorio**: es la zona donde se guardan todas las modificaciones y cambios realizados. Es el contenido de la carpeta oculta **`.git`**
 
-![Estados Git](_book/assets/3-stages-git.PNG)
+![Estados Git](assets/3-stages-git.PNG)
 
 - **`$ git status`**: permite conocer el estado de los archivos.
 - **`$ git status -s`**: muestra el estado pero de una manera más reducida.
