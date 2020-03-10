@@ -22,16 +22,16 @@ zabarlabs origin https://github.com/zabar/mi-proyecto (fetch)
 zabarlabs origin https://github.com/zabar/mi-proyecto (push)
 ```
 
+{% hint style='info' %}
+Si clonas un repositorio, automaticamente la referencia a ese remoto se llamará `origin`
+{% endhint %}
+
 ### ↘️ Traer datos desde Remoto
 
 - **`$ git fetch [nombreRemoto]`**: obtenemos los datos del repositorio remoto.
 
 {% hint style='info' %}
 `git fetch`solo trae los datos a tu repositorio local, ni los combina con tu trabajo ni modifica el trabajo que llevas hecho. La combinación con tu trabajo se hará manualmente.
-{% endhint %}
-
-{% hint style='info' %}
-Si clonas un repositorio, automaticamente la referencia a ese remoto se llamará `origin`
 {% endhint %}
 
 - **`$ git pull`**: además de traer los datos del repositorio remoto combina automáticamente la rama remota con la rama actual.
