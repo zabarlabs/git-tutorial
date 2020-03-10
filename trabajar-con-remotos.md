@@ -6,7 +6,9 @@ Una de las potencialidades de Git es poder realizar un trabajo colaborativo, par
 - **`$ git remote -v`**: muestra las URLs que serán usadas tanto para leer como para escribir en ese remoto.
 
 {% hint style='tip' %}
+
 Un repositorio puede tener múltiples remotos para trabajar con diferentes colaboradores.
+
 {% endhint %}
 
 ### 🚀 Cómo añadir un repositorio remoto
