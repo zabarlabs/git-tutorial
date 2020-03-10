@@ -27,11 +27,11 @@ zabarlabs origin https://github.com/zabar/mi-proyecto (push)
 - **`$ git fetch [nombreRemoto]`**: obtenemos los datos del repositorio remoto.
 
 {% hint style='info' %}
-`git fetch`solo trae los datos a tu repositorio local, ni lo combina con tu trabajo ni modifica el trabajo que llevas hecho. La combinación con el trabajo se debe hacer manualmente.
+`git fetch`solo trae los datos a tu repositorio local, ni los combina con tu trabajo ni modifica el trabajo que llevas hecho. La combinación con tu trabajo se hará manualmente.
 {% endhint %}
 
 {% hint style='info' %}
-Si clonas un repositorio automaticamente añade ese repositorio remoto con el nombre `origin`
+Si clonas un repositorio, automaticamente la referencia a ese remoto se llamará `origin`
 {% endhint %}
 
 - **`$ git pull`**: además de traer los datos del repositorio remoto combina automáticamente la rama remota con la rama actual.
@@ -41,7 +41,7 @@ Si clonas un repositorio automaticamente añade ese repositorio remoto con el no
 - **`$ git push [nombreRemoto] [nombreRama]`**: envia datos al servidor con nombre y rama especificados.
 
 {% hint style='danger' %}
-Este comando solo funciona si ha clonado de un servidor que tienes permiso de escritura y nadie más ha enviado datos de por medio. si alguien ha enviado deberás traerte su trabajo y combinarlo con tuyo antes de poder enviar.
+Este comando solo funciona si se ha clonado de un servidor en el que tienes permiso de escritura y nadie más ha enviado datos de por medio. Si alguien ha enviado datos, deberás traerte su trabajo y combinarlo con el tuyo antes de poder enviar.
 {% endhint %}
 
 ### 🔎 Inspeccionar un Remoto
