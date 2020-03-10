@@ -216,11 +216,31 @@ $ git commit -m<span class="hljs-string">&quot;Primer commit&quot;</span>
 <li><strong><code>$ git add &lt;archivo1&gt;&lt;archivo2&gt;&lt;...&gt;</code></strong>: comando que se utiliza para empezar a rastrear nuevos archivos.</li>
 <li><strong><code>$ git add .</code></strong>: utilizando el punto a&#xF1;ade todos los archivos a la vez.</li>
 <li><strong><code>$ git diff</code></strong>: compara lo que tienes en el directorio de trabajo con lo que est&#xE1; en el &#xE1;rea de preparaci&#xF3;n.</li>
-<li><strong><code>$ git adiff --staged</code></strong>: compara los cambios preparados con la &#xFA;ltima instantanea confirmada.</li>
+<li><strong><code>$ git diff --staged</code></strong>: compara los cambios preparados con la &#xFA;ltima instantanea confirmada.</li>
 <li><strong><code>$ git commit -m&quot;Mensaje del commit&quot;</code></strong>: comando que confirma los cambios y manda los archivos a la zona del Repositorio.</li>
 <li><strong><code>$ git commit -a -m&quot;Mensaje del commit</code></strong>: con esta combinaci&#xF3;n de comandos nos saltamos el area intermedia de preparaci&#xF3;n.</li>
 <li><strong><code>$ git checkout &lt;archivo&gt;</code></strong>: devuelve un archivo que est&#xE1; en el Staged Area al Working Area. (deshace los cambios).</li>
 </ul>
+<h3 id="&#x21AA;&#xFE0F;-&#xBF;c&#xF3;mo-deshacer-cosas">&#x21AA;&#xFE0F; &#xBF;C&#xF3;mo deshacer cosas?</h3>
+<p>Es bastante corriente tener que deshacer algun cambio y vamos a ver algunas de las herramientas usadas para poder hacerlo:</p>
+<ul>
+<li>Como volver atr&#xE1;s cuando un archivo ya ha sido confirmado, por ejemplo para agregar alg&#xFA;n archivo que se me haya podido olvidar en la conformaci&#xF3;n.</li>
+</ul>
+<pre><code class="lang-java">$ git commit -m<span class="hljs-string">&quot;Commit inicial&quot;</span>
+$ git commit --amend
+</code></pre>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>&#x1F6A8; Puede que en el momento de deshacer esa commit se haya modificado alguno de los archivos que estaban incluidos en esa conformaci&#xF3;n.</p>
+</div></div></p>
+<ul>
+<li>Como volver atr&#xE1;s cuando un archivo esta en el Staged Area (&#xE1;rea de preparaci&#xF3;n) y quiero devolverlo al Working Area:</li>
+</ul>
+<p><strong><code>$ git reset HEAD &lt;archivo&gt;</code></strong></p>
+<ul>
+<li>Como no mantener los cambios de un archivo que ha sido modificado, pero todavia no se ha a&#xF1;adido al Staged Area:</li>
+</ul>
+<p><strong><code>$ git checkout -- &lt;archivo&gt;</code></strong></p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>&#x1F6A8; Este comando es peligroso, cualquier cambio realizado desaparecera.</p>
+</div></div></p>
 <h3 id="&#x2702;-&#xBF;c&#xF3;mo-eliminar-un-archivo">&#x2702; &#xBF;C&#xF3;mo eliminar un archivo?</h3>
 <ul>
 <li><strong><code>$ git rm &lt;archivo&gt;</code></strong>: elimina el archivo del directorio de trabajo, de manera que la pr&#xF3;xima vez aparezca como un archivo no rastreado.</li>
@@ -276,7 +296,7 @@ $ git commit -m<span class="hljs-string">&quot;Primer commit&quot;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Comandos Básicos","level":"1.2","depth":1,"next":{"title":"Historial de Commits","level":"1.3","depth":1,"path":"historial-commits.md","ref":"historial-commits.md","articles":[]},"previous":{"title":"Introduccion","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"comandos-basicos.md","mtime":"2020-03-10T10:23:44.230Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T10:24:44.493Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Comandos Básicos","level":"1.2","depth":1,"next":{"title":"Historial de Commits","level":"1.3","depth":1,"path":"historial-commits.md","ref":"historial-commits.md","articles":[]},"previous":{"title":"Introduccion","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"comandos-basicos.md","mtime":"2020-03-10T11:10:05.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T11:24:36.602Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
