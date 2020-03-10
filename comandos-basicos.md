@@ -44,10 +44,37 @@ Dentro de este ciclo de vida podemos encontrarnos con tres estados en los que se
 - **`$ git add <archivo1><archivo2><...>`**: comando que se utiliza para empezar a rastrear nuevos archivos.
 - **`$ git add .`**: utilizando el punto añade todos los archivos a la vez.
 - **`$ git diff`**: compara lo que tienes en el directorio de trabajo con lo que está en el área de preparación.
-- **`$ git adiff --staged`**: compara los cambios preparados con la última instantanea confirmada.
+- **`$ git diff --staged`**: compara los cambios preparados con la última instantanea confirmada.
 - **`$ git commit -m"Mensaje del commit"`**: comando que confirma los cambios y manda los archivos a la zona del Repositorio.
 - **`$ git commit -a -m"Mensaje del commit`**: con esta combinación de comandos nos saltamos el area intermedia de preparación.
 - **`$ git checkout <archivo>`**: devuelve un archivo que está en el Staged Area al Working Area. (deshace los cambios).
+
+### ↪️ ¿Cómo deshacer cosas?
+
+Es bastante corriente tener que deshacer algun cambio y vamos a ver algunas de las herramientas usadas para poder hacerlo:
+
+- Como volver atrás cuando un archivo ya ha sido confirmado, por ejemplo para agregar algún archivo que se me haya podido olvidar en la conformación.
+
+```java
+$ git commit -m"Commit inicial"
+$ git commit --amend
+```
+
+{% hint style='danger' %}
+🚨 Puede que en el momento de deshacer esa commit se haya modificado alguno de los archivos que estaban incluidos en esa conformación.
+{% endhint %}
+
+- Como volver atrás cuando un archivo esta en el Staged Area (área de preparación) y quiero devolverlo al Working Area:
+
+**`$ git reset HEAD <archivo>`**
+
+- Como no mantener los cambios de un archivo que ha sido modificado, pero todavia no se ha añadido al Staged Area:
+
+**`$ git checkout -- <archivo>`**
+
+{% hint style='danger' %}
+🚨 Este comando es peligroso, cualquier cambio realizado desaparecera.
+{% endhint %}
 
 ### ✂ ¿Cómo eliminar un archivo?
 
