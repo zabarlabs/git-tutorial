@@ -5,8 +5,6 @@ Una de las potencialidades de Git es poder realizar un trabajo colaborativo, par
 - **`$ git remote`**: muestra los nombres de los repositorios remotos (deberiamos poder ver al menos `origin` que es el nombre por defecto que Git le ha dado al servidor del que has clonado).
 - **`$ git remote -v`**: muestra las URLs que serán usadas tanto para leer como para escribir en ese remoto.
 
-> Un repositorio puede tener múltiples remotos para trabajar con diferentes colaboradores.
-
 ### 🚀 Cómo añadir un repositorio remoto
 
 - **`$ git remote add [nombre] [URL]`**: se asocia un remoto a un nombre y a una URL.
@@ -24,6 +22,10 @@ zabarlabs origin https://github.com/zabar/mi-proyecto (push)
 
 {% hint style='info' %}
 Si clonas un repositorio, automaticamente la referencia a ese remoto se llamará `origin`
+{% endhint %}
+
+{% hint style='tip' %}  
+Un repositorio puede tener múltiples remotos para trabajar con diferentes colaboradores.  
 {% endhint %}
 
 ### ↘️ Traer datos desde Remoto
