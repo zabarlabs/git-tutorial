@@ -47,6 +47,7 @@ Dentro de este ciclo de vida podemos encontrarnos con tres estados en los que se
 - **`$ git adiff --staged`**: compara los cambios preparados con la última instantanea confirmada.
 - **`$ git commit -m"Mensaje del commit"`**: comando que confirma los cambios y manda los archivos a la zona del Repositorio.
 - **`$ git commit -a -m"Mensaje del commit`**: con esta combinación de comandos nos saltamos el area intermedia de preparación.
+- **`$ git checkout <archivo>`**: devuelve un archivo que está en el Staged Area al Working Area. (deshace los cambios).
 
 ### ✂ ¿Cómo eliminar un archivo?
 
