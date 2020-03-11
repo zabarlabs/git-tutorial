@@ -40,7 +40,7 @@ Un repositorio puede tener múltiples remotos para trabajar con diferentes colab
 `git fetch`solo trae los datos a tu repositorio local, ni los combina con tu trabajo ni modifica el trabajo que llevas hecho. La combinación con tu trabajo se hará manualmente.
 {% endhint %}
 
-- **`$ git pull [nombreRepositorio] [nombreRama]`**: además de traer los datos del repositorio remoto combina automáticamente la rama remota con la rama actual.
+- **`$ git pull [nombreRemoto] [nombreRama]`**: además de traer los datos del repositorio remoto combina automáticamente la rama remota con la rama actual.
 
 ### ↗️ Enviar datos al Remoto
 
