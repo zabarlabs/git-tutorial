@@ -4,3 +4,4 @@
 - [Comandos Básicos](comandos-basicos.md)
 - [Historial de Commits](historial-commits.md)
 - [Trabajar con Remotos](trabajar-con-remotos.md)
+- [FAQs](FAQs.md)
