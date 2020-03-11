@@ -9,6 +9,10 @@ Una de las potencialidades de Git es poder realizar un trabajo colaborativo, par
 
 - **`$ git remote add [nombre] [URL]`**: se asocia un remoto a un nombre y a una URL.
 
+{% hint style="info" %}
+La URL se coge de la barra de direcciones del navegador que muestra la dirección del repositoro remoto que queremos añadir.  
+{% endhint %}
+
 ```java
 $ git remote
 origin
@@ -36,7 +40,7 @@ Un repositorio puede tener múltiples remotos para trabajar con diferentes colab
 `git fetch`solo trae los datos a tu repositorio local, ni los combina con tu trabajo ni modifica el trabajo que llevas hecho. La combinación con tu trabajo se hará manualmente.
 {% endhint %}
 
-- **`$ git pull`**: además de traer los datos del repositorio remoto combina automáticamente la rama remota con la rama actual.
+- **`$ git pull [nombreRepositorio] [nombreRama]`**: además de traer los datos del repositorio remoto combina automáticamente la rama remota con la rama actual.
 
 ### ↗️ Enviar datos al Remoto
 
