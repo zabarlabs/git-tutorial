@@ -202,6 +202,8 @@
 <ul>
 <li><strong><code>$ git remote add [nombre] [URL]</code></strong>: se asocia un remoto a un nombre y a una URL.</li>
 </ul>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>La URL se coge de la barra de direcciones del navegador que muestra la direcci&#xF3;n del repositoro remoto que queremos a&#xF1;adir.  </p>
+</div></div></p>
 <pre><code class="lang-java">$ git remote
 origin
 $ git remote add zabarlabs https:<span class="hljs-comment">//github.com/zabar/mi-proyecto</span>
@@ -222,7 +224,7 @@ zabarlabs origin https:<span class="hljs-comment">//github.com/zabar/mi-proyecto
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><code>git fetch</code>solo trae los datos a tu repositorio local, ni los combina con tu trabajo ni modifica el trabajo que llevas hecho. La combinaci&#xF3;n con tu trabajo se har&#xE1; manualmente.</p>
 </div></div></p>
 <ul>
-<li><strong><code>$ git pull</code></strong>: adem&#xE1;s de traer los datos del repositorio remoto combina autom&#xE1;ticamente la rama remota con la rama actual.</li>
+<li><strong><code>$ git pull [nombreRepositorio] [nombreRama]</code></strong>: adem&#xE1;s de traer los datos del repositorio remoto combina autom&#xE1;ticamente la rama remota con la rama actual.</li>
 </ul>
 <h3 id="&#x2197;&#xFE0F;-enviar-datos-al-remoto">&#x2197;&#xFE0F; Enviar datos al Remoto</h3>
 <ul>
@@ -278,7 +280,7 @@ zabarlabs origin https:<span class="hljs-comment">//github.com/zabar/mi-proyecto
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Trabajar con Remotos","level":"1.4","depth":1,"previous":{"title":"Historial de Commits","level":"1.3","depth":1,"path":"historial-commits.md","ref":"historial-commits.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"trabajar-con-remotos.md","mtime":"2020-03-10T15:47:58.636Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T15:48:52.022Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Trabajar con Remotos","level":"1.4","depth":1,"previous":{"title":"Historial de Commits","level":"1.3","depth":1,"path":"historial-commits.md","ref":"historial-commits.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","hints","copy-code-button","youtube"],"pluginsConfig":{"youtube":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"trabajar-con-remotos.md","mtime":"2020-03-11T18:48:31.776Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-11T18:51:33.070Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
